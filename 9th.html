@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title" class="clstitle">Hello world</h1>
+    <button id="btnn">click me</button>
+
+    <p class="pera">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quod molestias excepturi numquam unde, sequi corrupti quibusdam illum accusantium accusamus soluta deleniti dolorem, incidunt similique expedita officia! Qui, voluptatibus at.</p>
+
+    <button class="perabtn">click me</button>
+
+
+    <script>
+  
+
+
+  let pera = document.getElementById('pera');
+        let perabtn = document.getElementsByClassName('perabtn');
+        let title = document.querySelector('#title');
+        let btn = document.querySelector('#btnn');
+
+        let num = Number(prompt('Enter your number: '));
+
+title.addEventListener('click',function(){
+    title.style.color = 'red';
+});
+
+btn.addEventListener('click',function () {
+    title.textContent = 'Hello shakir';
+});
+
+
+perabtn.addEventListener('click', function (){
+    if(num > 10){
+        pera.style.color = 'blue';
+    }else{
+        pera.style.color = 'red';
+
+    }
+});
+
+
+
+
+    </script>
+
+</body>
+</html>
